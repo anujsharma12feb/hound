@@ -17,6 +17,11 @@ Hound is an extremely fast source code search engine. The core is based on this 
 ```
 go get github.com/etsy/hound/cmds/...
 ```
+	In case $GOPATH is still coming as empty, then add the below exports to ~/.bashrc:
+
+		export GOPATH=$HOME/go
+
+		export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 2. Create a [config.json](config-example.json) in a directory with your list of repositories.
 
